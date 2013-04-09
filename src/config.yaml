@@ -1,0 +1,6 @@
+name: *****
+version: *
+handle:
+- compress: if(in_header["Accept-Encoding"] ~ "gzip|deflate") compress
+- errordoc: 404 /htmls/404.html
+- rewrite:  if ( !is_dir() && !is_file() ) goto "/index.php"
