@@ -1,5 +1,5 @@
 <?php 
-//SAE 数据库api
+//������
 class Db 
 {	
  
